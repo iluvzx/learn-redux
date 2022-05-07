@@ -4,8 +4,9 @@ const initialState = {
 }
 
 // 创建一个函数，返回状态（数据）
-export default function (state = initialState, { type }) {
-  switch (type) {
+// eslint-disable-next-line
+export default (state = initialState, action) => {
+  switch (action.type) {
     case 'increment':
       return {
         count: state.count + 1

@@ -6,6 +6,7 @@ function App(props) {
       <h2>当前计数:{props.count}</h2>
       <button onClick={props.increment}>+</button>
       <button onClick={props.decrement}>-</button>
+      <button onClick={() => props.increment_5(5)}>+5</button>
     </>
   )
 }
@@ -30,6 +31,9 @@ const mapDispatchToProps = dispatch => {
     },
     decrement() {
       dispatch({ type: 'decrement' })
+    },
+    increment_5(payload) {
+      dispatch({ type: 'increment_5', payload })
     }
   }
 }

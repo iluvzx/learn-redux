@@ -15,6 +15,10 @@ export default (state = initialState, action) => {
       return {
         count: state.count - 1
       }
+    case 'increment_5':
+      return {
+        count: state.count + action.payload
+      }
     default:
       return state
   }

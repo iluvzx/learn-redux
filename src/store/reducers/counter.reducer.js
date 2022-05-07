@@ -1,3 +1,5 @@
+import { INCREMENT, DECREMENT, INCREMENT_5 } from "../actions/counter.action.types"
+
 // 创建初始状态
 const initialState = {
   count: 0
@@ -7,15 +9,15 @@ const initialState = {
 // eslint-disable-next-line
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'increment':
+    case INCREMENT:
       return {
         count: state.count + 1
       }
-    case 'decrement':
+    case DECREMENT:
       return {
         count: state.count - 1
       }
-    case 'increment_5':
+    case INCREMENT_5:
       return {
         count: state.count + action.payload
       }

@@ -1,5 +1,5 @@
 // 导入actions
-import { INCREMENT, DECREMENT, INCREMENT_5 } from "./counter.action.types"
+import { INCREMENT, DECREMENT, INCREMENT_5 } from "./CounterActionsTypes"
 
 export const increment = () => ({ type: INCREMENT })
 export const decrement = () => ({ type: DECREMENT })

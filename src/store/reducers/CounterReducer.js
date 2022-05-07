@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT, INCREMENT_5 } from "../actions/counter.action.types"
+import { INCREMENT, DECREMENT, INCREMENT_5 } from "../actions/Counter/CounterActionsTypes"
 
 // 创建初始状态
 const initialState = {

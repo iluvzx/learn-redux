@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 // !!1.引入bindActionCreators函数
 import { bindActionCreators } from 'redux'
 // !!2.导入actions
-import * as counterActions from './store/actions/counter.action'
+import * as counterActions from './store/actions/CounterActions'
 
 
 function App(props) {
@@ -20,7 +20,7 @@ function App(props) {
 // 代码优化：自定义一个回调，用props到组件
 const mapStateToProps = state => {
   return {
-    count: state.count
+    count: state.CounterReducer.count
   }
 }
 

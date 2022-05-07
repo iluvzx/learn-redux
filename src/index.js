@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 
 // import App from './01.修改store中的数据'
 // import App from './02.提取action代码作为函数'
-import App from './03.bindActionCreators的使用'
+// import App from './03.bindActionCreators的使用'
+import App from './04.拆分合并reducer'
 
 // 1.引入store
 import store from './store';
